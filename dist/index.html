@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="">
+  <header class="bg-white shadow-md z-10 fixed top-0 w-full h-24 md:h-16  flex items-center">
+    <div class="containe w-full m-auto  px-6 flex flex-wrap items-center">
+      <div class="logo-cont w-1/3 md:w-1/6 ">
+        <h2 class="text-3xl font-bold text-pc"><i class="fa-solid fa-share-nodes"></i> Logo</h2>
+
+      </div>
+      <div class="search-cont w-2/3 md:w-1/3">
+        <div class="relative w-full"> <span class="absolute right-3 top-1/2 -translate-y-1/2 text-color"><i
+              class="fa-solid fa-magnifying-glass"></i></span>
+          <input type="text" class=" outline-none border border-solid w-full px-3 py-1 rounded-full"
+            placeholder="Search...">
+        </div>
+      </div>
+      <div class="ctn-cont w-full md:w-1/2 mt-2 md:mt-0">
+        <div class="w-full flex items-center justify-between md:justify-end md:gap-5">
+          <div class="ctn-icons flex gap-2">
+            <button class="icon"><i class="fa-solid fa-envelope"></i></button>
+            <button class="icon"><i class="fa-solid fa-bell"></i></button>
+          </div>
+          <div class="ctn-btn">
+            <button class="my-btn">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-content mt-24 md:mt-16 flex justify-center">
+    <div class="left-sidebar w-1/5 z-0 fixed h-full lg:left-0 -left-full">
+      <div class="innerCont bg-white h-full p-5 relative w-full">
+        <div class="p-4 bgColor rounded-lg">
+          <h3 class="text-lg font-semibold">Join our community to stay updated.</h3>
+          <div class="account-btn mt-4 flex flex-col gap-3">
+            <button class="w-full my-btn">Login</button>
+            <button class="w-full my-btn">Create Account</button>
+          </div>
+        </div>
+        <nav class="mt-5">
+          <ul class="flex flex-col gap-3">
+            <li class="navigation-link"><a href="#" class="links"> <span>Home</span></a>
+            </li>
+            <li class="navigation-link"><a href="#" class="links">
+                <span>Categories</span></a>
+
+              <div class="cate-list-cont">
+                <ul class="cate-list bgColor flex flex-col gap-2 p-3 rounded-lg">
+
+                </ul>
+              </div>
+
+            </li>
+            <li class="navigation-link"><a href="#" class="links">
+                <span>Advertising</span></a>
+            </li>
+
+
+            <li class="navigation-link"><a href="#" class="links">
+                <span>Terms and Policy</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="left-sidebar-footer">
+          <div class="ctn-icons flex gap-2">
+            <button class="icon"><i class="fa-solid fa-envelope"></i></button>
+            <button class="icon"><i class="fa-solid fa-bell"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="middle-content lg:w-3/5  w-full flex flex-col gap-10">
+      <div class="middle-cont-ctn p-3 bg-blue-300 flex  relative justify-between">
+        <div class="flex gap-5">
+          <button class="text-xl text-pc hidden "><i class="fa-solid fa-bars"></i></button>
+          <button class="font-semibold">Relative</button>
+          <button class="font-semibold">Latest</button>
+          <button class="font-semibold">Top Post</button>
+        </div>
+        <div>
+          <button class="text-xl text-pc"><i class="fa-solid fa-bars"></i></button>
+
+        </div>
+      </div>
+      <!-- posts wrapper -->
+      <div class="post-wrapper w-full py-3 px-8 flex flex-col gap-5">
+      </div>
+      <!-- posts wrapper ends -->
+    </div>
+
+
+
+    <div class="right-sidebar w-1/5  z-0 fixed h-full lg:right-0 -right-full">
+      <div class="bg-white h-full p-5">
+        <div class="newsletter">
+          <h3 class="text-lg font-semibold">Join our Newsletter.</h3>
+          <form action="" class="mt-3 flex flex-col gap-3">
+            <input type="text" class=" outline-none border border-solid w-full px-3 py-1 rounded-full"
+              placeholder="Email">
+            <button class="w-full my-btn">Submit</button>
+          </form>
+        </div>
+
+        <div class="mt-4">
+          <h3 class="text-md font-semibold">Favourite Posts</h3>
+          <div class="fav-posts flex flex-col gap-5 mt-3">
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="assets/js/script.js"></script>
+
+</html>
